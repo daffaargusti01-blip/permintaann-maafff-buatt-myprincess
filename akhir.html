@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terima Kasih 🤍</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#fff0f5,#ffe4ec);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+}
+
+.card{
+width:90%;
+max-width:420px;
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+text-align:center;
+z-index:2;
+}
+
+img{
+width:100%;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+h2{
+color:#ff4f87;
+margin-bottom:15px;
+}
+
+p{
+line-height:1.8;
+color:#555;
+}
+
+button{
+margin-top:20px;
+padding:14px 28px;
+border:none;
+border-radius:50px;
+background:#ff4f87;
+color:white;
+font-size:17px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+.heart{
+position:fixed;
+top:-20px;
+color:#ff4f87;
+animation:fall linear infinite;
+pointer-events:none;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh);
+opacity:0;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="10.jpg">
+
+<h2>Terima Kasih 🤍</h2>
+
+<p>
+Terima kasih ya udah baca semuanya.
+<br><br>
+
+Aku nggak minta kamu langsung maafin aku.
+Aku cuma pengen kamu tahu kalau aku bener-bener sadar sama kesalahan aku dan pengen berubah.
+
+<br><br>
+
+Kalau kamu masih mau kasih aku kesempatan, aku bakal buktiin lewat sikap, bukan cuma kata-kata.
+
+<br><br>
+
+I loveeeeeeeee youuuuuuuu cayanggggggg 🤍
+</p>
+
+<button onclick="maaf()">❤️ Maafin Aku Ya</button>
+
+</div>
+
+<script>
+
+function maaf(){
+alert("Makasih yaa cayangggg udah baca semuanya 🤍");
+}
+
+for(let i=0;i<40;i++){
+
+let h=document.createElement("div");
+
+h.innerHTML="🤍";
+
+h.className="heart";
+
+h.style.left=Math.random()*100+"vw";
+
+h.style.animationDuration=(Math.random()*5+5)+"s";
+
+h.style.fontSize=(Math.random()*15+15)+"px";
+
+document.body.appendChild(h);
+
+}
+
+</script>
+
+</body>
+</html>

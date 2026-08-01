@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Cayang 🤍</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#fff0f5;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+}
+
+.card{
+width:90%;
+max-width:400px;
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+text-align:center;
+}
+
+h1{
+color:#ff4f87;
+margin-bottom:15px;
+}
+
+p{
+margin-bottom:20px;
+color:#555;
+}
+
+input{
+width:100%;
+padding:12px;
+border-radius:10px;
+border:1px solid #ddd;
+margin-bottom:15px;
+font-size:16px;
+text-align:center;
+}
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:50px;
+background:#ff4f87;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>Haiiiiiii Cayanggggg 🤍</h1>
+
+<p>Masukin password dulu yaa 🥺</p>
+
+<input type="password" id="pw" placeholder="Password">
+
+<br>
+
+<button onclick="cek()">Unlock 🔓</button>
+
+</div>
+
+<script>
+
+function cek(){
+
+let password="14022026";
+
+let input=document.getElementById("pw").value;
+
+if(input==password){
+
+window.location.href="sayang.html";
+
+}else{
+
+alert("Passwordnya salahhh 🥺");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
